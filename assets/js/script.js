@@ -24,9 +24,9 @@ function startIntroTyping() {
   new TypeIt('#intro-text', {
     speed: 50,
   })
-    .type('welcome.', { delay: 1200 })
-    .delete(null, { delay: 1000 })
-    .type(`${mobile ? 'tap' : 'press any key'} to enter.`)
+    .type('Welcome to 45qks store.', { delay: 1400 })
+    .delete(null, { delay: 1200 })
+    .type(`${mobile ? 'tap' : 'Press any key'} in order to enter.`)
     .go();
 
   setTimeout(function () {
@@ -37,7 +37,7 @@ function startIntroTyping() {
 function typerStartTyping(typer) {
   typer.reset();
 
-  let text = ['Java Developer', 'Pepsi W', 'Cats are cool', 'Certified skidder', 'bro why are you still here'];
+  let text = ['45qk store', 'No trading', 'Only in DMs', 'You go first', 'You have 6 months warranty after you bought a product to return it '];
 
   text.forEach(function (language, index) {
     typer.move(null);
